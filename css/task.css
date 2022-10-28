@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4b4b4b;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    color: #ff8800;
+    margin-bottom: 2em;
+    margin-top: 3em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    /*Coloca o conteúdo em linha e permite a quebra de linha:*/
+    flex-flow: row wrap;
+    width: 60%;
+    margin: auto auto;
+
+}
+
+.input {
+    width: 70%;
+    margin: auto auto;
+    padding: 1.5em;
+    border: none;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.btn-add {
+    background-color: #ff9100;
+    color: #ffff;
+    border: none;
+    width: 30%;
+    padding: 1.6em;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-add:hover {
+    background-color: #ffd621;
+    color: #000000;
+}
+
+.my-tasks {
+    /* serve para dispor os elementos dentro de um determinado container em linhas ou colunas,  horizontal ou verticalmente, com ou sem espaços entre eles, de tamanhos iguais ou diferentes: */
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto auto;
+    padding-top: 2em;
+    width: 60%;
+    margin: auto auto;
+
+}
+
+.item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 0.3em #cccccc;
+    margin-bottom: 3%;
+    border-radius: 1em;
+    cursor: pointer;
+
+}
+
+/*Quando estiver clicado fica com o fundo assim: */
+.item.clicked {
+    background-color: #81d670;
+}
+
+/*Quando o item clicado o nosso item nome fica riscado:*/
+.item.clicked .item-name {
+    text-decoration: line-through;
+    color: #464646;
+}
+
+.item-icon {
+    flex: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.item-name {
+    flex: 60%;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+.item-button {
+    flex: 20%;
+}
+
+.delete {
+    background-color: #c70000;
+    border: none;
+    color: #ffff;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.delete:hover {
+    background-color: #bd1c1c;
+}
+
+.fa-delete-left {
+    font-size: 1.5em;
+}
+
+.fa-circle-check {
+    color: #1f9c00;
+}
