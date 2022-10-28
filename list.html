@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="icon/task-icon.svg" type="image/x-icon">
+</head>
+<body>
+    <h2>Lista de Tarefas</h2>
+    <header>
+        <input type="text" class="input" placeholder="Digite aqui sua tarefa...">
+        <button onclick="addTask()" class="btn-add">Adicionar</button>
+    </header>
+
+    <!--Toda a parte de html que tá la no js na variável, let newItem, eu fiz aqui antes, pra estilizar/ver como ficava.
+    
+Dps apaguei daqui e deixei apenas no JS, só fica a área onde vai os elementos pro JS saber se localizar.-->
+    <div class="my-tasks"></div>
+
+    <script src="js/tasks.js"></script>
+</body>
+</html>
